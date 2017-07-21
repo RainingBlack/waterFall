@@ -1,0 +1,157 @@
+#room{
+  width:100%;
+  height:100%;
+
+  &.show{
+    display: block;
+  }
+
+  &.hide{
+    display: none;
+  }
+
+  >div{
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  #left{
+    width:50px;
+    height:100%;
+    background-color: #1b2029;
+  }
+
+  #top{
+    height:50px;
+
+    >div{
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    img{
+      width:40px;
+      height:40px;
+    }
+
+    .main-right{
+      display: flex;
+      flex-direction: row;
+      justify-content:flex-start;
+      align-items: center;
+    }
+  }
+
+  #video-content{
+    flex:1;
+    background-color: #edeeee;
+
+    .video-content{
+      width:100%;
+      height:100%;
+      position: relative;
+
+      .border{
+        display: block;
+        position: absolute;
+        border: 4px solid transparent;
+        border-color: aqua;
+        pointer-events:none;
+      }
+
+      .video{
+        position: absolute;
+        width:300px;
+        height:300px;
+
+        video{
+          width: 100%;
+          height: 100%;
+          pointer-events:none;
+        }
+
+        > div{
+          position: relative;
+          width: 100%;
+          height: 100%;
+          .video_img{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+          }
+        }
+      }
+    }
+  }
+
+  #chat{
+    position: absolute;
+    right: 0;
+    width:200px;
+    height: 100%;
+    background-color: #fff;
+
+    >div{
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .title{
+      height: 50px;
+    }
+
+    .chat-content{
+      flex: 1;
+      overflow: auto;
+
+      li{
+        display: flex;
+        flex-direction: row;
+
+        img{
+          width: 30px;
+          height: 30px;
+        }
+
+        .right{
+          flex:1;
+
+          .content{
+            background-color: #f7f7f7;
+            border-radius: 5px;
+
+            .text{
+              word-break: break-all;
+            }
+          }
+        }
+      }
+
+    }
+
+    .chat-input{
+      height: 80px;
+
+      textarea{
+        width: 100%;
+        height: 80px;
+      }
+    }
+  }
+
+}

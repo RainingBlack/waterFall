@@ -1,0 +1,250 @@
+/*! The file is created by innovationer--Fri Jul 21 2017 10:52:37 GMT+0800 (中国标准时间) */
+#login {
+  width: 100%;
+  height: 100%;
+}
+#login.show {
+  display: block;
+}
+#login.hide {
+  display: none;
+}
+#login > div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+#login .top {
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#login .content {
+  flex: 1;
+  position: absolute;
+  right: 20%;
+  top: 50%;
+}
+#room {
+  width: 100%;
+  height: 100%;
+}
+#room.show {
+  display: block;
+}
+#room.hide {
+  display: none;
+}
+#room > div {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+#room .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+#room #left {
+  width: 50px;
+  height: 100%;
+  background-color: #1b2029;
+}
+#room #top {
+  height: 50px;
+}
+#room #top > div {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#room #top img {
+  width: 40px;
+  height: 40px;
+}
+#room #top .main-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+#room #video-content {
+  flex: 1;
+  background-color: #edeeee;
+}
+#room #video-content .video-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#room #video-content .video-content .border {
+  display: block;
+  position: absolute;
+  border: 4px solid transparent;
+  border-color: aqua;
+  pointer-events: none;
+}
+#room #video-content .video-content .video {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+}
+#room #video-content .video-content .video video {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+#room #video-content .video-content .video > div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#room #video-content .video-content .video > div .video_img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+#room #chat {
+  position: absolute;
+  right: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #fff;
+}
+#room #chat > div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#room #chat .title {
+  height: 50px;
+}
+#room #chat .chat-content {
+  flex: 1;
+  overflow: auto;
+}
+#room #chat .chat-content li {
+  display: flex;
+  flex-direction: row;
+}
+#room #chat .chat-content li img {
+  width: 30px;
+  height: 30px;
+}
+#room #chat .chat-content li .right {
+  flex: 1;
+}
+#room #chat .chat-content li .right .content {
+  background-color: #f7f7f7;
+  border-radius: 5px;
+}
+#room #chat .chat-content li .right .content .text {
+  word-break: break-all;
+}
+#room #chat .chat-input {
+  height: 80px;
+}
+#room #chat .chat-input textarea {
+  width: 100%;
+  height: 80px;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+  min-width: 800px;
+  overflow: hidden;
+}
+.main {
+  width: 100%;
+  height: 100%;
+}
+.main > div {
+  height: 100%;
+}
